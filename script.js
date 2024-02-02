@@ -1,18 +1,21 @@
 function setup() {
   createCanvas(320, 240);
 }
-
 function draw() {
   background(200);
+var x = width/2
+var y = height/2
+var size = 100
   
   // check to condition of the mouse
-  if(mouseIsPressed){ // true or false?
+ if(mouseIsPressed){ // true or false?
     // if true, change the fill color here
-    fill("blue");
+   fill("blue");
   }
   else { 
     // otherwise do this:
-    fill("yellow");
+   fill("yellow");
   }
-  ellipse(width/2, height/2, 100, 100);
+  ellipse(x, y, size, size);
+  
 }
